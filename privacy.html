@@ -1,206 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Dot Journal</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #fff;
-        }
-        h1 {
-            color: #007AFF;
-            border-bottom: 2px solid #007AFF;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #007AFF;
-            margin-top: 30px;
-        }
-        h3 {
-            color: #555;
-        }
-        .last-updated {
-            color: #999;
-            font-style: italic;
-        }
-        .overview {
-            background: #f5f5f5;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background: #007AFF;
-            color: white;
-        }
-        a {
-            color: #007AFF;
-        }
-        nav {
-            margin-bottom: 20px;
-        }
-        nav a {
-            color: #007AFF;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Dot Journal</title>
+  <meta name="description" content="Dot Journal privacy policy. Your data stays on your device.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #000000;
+      --surface: #1c1c1e;
+      --text-primary: #ffffff;
+      --text-secondary: #8e8e93;
+      --accent: #007AFF;
+    }
+    body {
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      padding: 1rem 2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    nav .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent); }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .updated {
+      color: var(--text-secondary);
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+    ul {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+    li { margin-bottom: 0.5rem; }
+    a { color: var(--accent); }
+    footer {
+      padding: 3rem 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+    footer p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: var(--text-primary);
+    }
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      main {
+        padding: 3rem 1.5rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">← Back to Home</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="support.html">Support</a>
-    </nav>
-
-    <h1>Privacy Policy for Dot Journal</h1>
-    <p class="last-updated">Last Updated: January 24, 2025</p>
-
-    <div class="overview">
-        <h2>Overview</h2>
-        <p><strong>The short version:</strong> Your journal data stays on your device. We don't collect, track, or sell your personal information.</p>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">Dot<span>.</span>Journal</a>
     </div>
-
+  </nav>
+  
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: February 2026</p>
+    
+    <h2>The Short Version</h2>
+    <p>Dot Journal stores all your data locally on your device. We don't collect, store, or have access to any of your personal information or journal entries. Period.</p>
+    
     <h2>Data Storage</h2>
-
-    <h3>Local-First Architecture</h3>
-    <p>All your journal data—tasks, events, habits, moods, and notes—is stored locally on your device using a SQLite database. Your data never leaves your device unless you explicitly choose to sync it.</p>
-
-    <h3>iCloud Sync (Optional)</h3>
-    <p>If you enable iCloud sync, your data is stored in your personal iCloud account. This sync is:</p>
+    <p>All your journal entries, tasks, habits, moods, and events are stored locally on your iPhone and Apple Watch using SQLite. Your data never leaves your device unless you explicitly export it.</p>
+    
+    <h2>What We Don't Collect</h2>
     <ul>
-        <li>Controlled entirely by you</li>
-        <li>Encrypted by Apple</li>
-        <li>Stored in your private iCloud container</li>
-        <li>Not accessible to us</li>
+      <li>Your journal entries or any content you create</li>
+      <li>Personal information (name, email, phone number)</li>
+      <li>Usage analytics or behavioral data</li>
+      <li>Location data</li>
+      <li>Device identifiers for tracking purposes</li>
     </ul>
-    <p>We do not have access to your iCloud data.</p>
-
-    <h3>Apple Watch</h3>
-    <p>If you use the Apple Watch companion app, data is synced between your iPhone and Apple Watch using Apple's WatchConnectivity framework. This data transfer:</p>
-    <ul>
-        <li>Occurs directly between your devices</li>
-        <li>Does not pass through our servers</li>
-        <li>Is managed by Apple's secure protocols</li>
-    </ul>
-
-    <h2>Data We Do NOT Collect</h2>
-    <p>We do not collect, store, or have access to:</p>
-    <ul>
-        <li>Your journal entries, tasks, habits, or moods</li>
-        <li>Your personal information (name, email, phone)</li>
-        <li>Your location data</li>
-        <li>Analytics or usage data</li>
-        <li>Device identifiers</li>
-        <li>Any tracking information</li>
-    </ul>
-
+    
+    <h2>No Account Required</h2>
+    <p>Dot Journal doesn't require you to create an account. There's no login, no email verification, no password. Just download and start journaling.</p>
+    
+    <h2>iCloud & Sync</h2>
+    <p>If you enable iCloud backup on your device, your Dot Journal data may be included in your device backup. This is handled entirely by Apple and subject to Apple's privacy policy. Dot Journal does not use iCloud sync or CloudKit directly.</p>
+    
+    <h2>Apple Watch</h2>
+    <p>Data syncs between your iPhone and Apple Watch using Apple's WatchConnectivity framework. This communication happens directly between your devices over Bluetooth or local Wi-Fi — not through any external servers.</p>
+    
+    <h2>Data Export</h2>
+    <p>You can export all your data at any time in standard formats (JSON, CSV). Your data belongs to you, and you should always be able to take it with you.</p>
+    
+    <h2>Security</h2>
+    <p>Dot Journal supports Face ID and Touch ID to protect access to your journal. Your biometric data is handled entirely by iOS and never accessed by our app.</p>
+    
     <h2>Third-Party Services</h2>
-
-    <h3>Apple Services</h3>
-    <p>Dot Journal uses the following Apple services:</p>
-    <ul>
-        <li><strong>iCloud</strong> (optional): For syncing data across your devices</li>
-        <li><strong>Face ID / Touch ID</strong>: For app lock functionality (biometric data is handled entirely by Apple and never accessed by the app)</li>
-        <li><strong>App Store</strong>: For in-app purchases</li>
-    </ul>
-
-    <h3>In-App Purchases</h3>
-    <p>Purchases are processed entirely by Apple through the App Store. We do not receive or store your payment information. Apple's privacy policy governs these transactions.</p>
-
-    <h2>Data Security</h2>
-
-    <h3>On-Device Protection</h3>
-    <ul>
-        <li>All data is stored locally in the app's sandboxed container</li>
-        <li>Optional Face ID / Touch ID protection for app access</li>
-        <li>Data is encrypted by iOS at rest</li>
-    </ul>
-
-    <h3>Data Export</h3>
-    <p>You can export your data at any time in multiple formats (JSON, CSV, Markdown). Your data belongs to you.</p>
-
-    <h2>Children's Privacy</h2>
-    <p>Dot Journal does not knowingly collect any personal information from children under 13. The app does not require account creation or personal information to function.</p>
-
-    <h2>Data Retention and Deletion</h2>
-    <p>Since all data is stored locally on your device:</p>
-    <ul>
-        <li><strong>Retention</strong>: Data remains on your device until you delete it</li>
-        <li><strong>Deletion</strong>: Uninstalling the app removes all local data</li>
-        <li><strong>iCloud</strong>: Disabling iCloud sync or deleting the app removes data from iCloud</li>
-    </ul>
-    <p>You have complete control over your data at all times.</p>
-
+    <p>Dot Journal does not integrate with any third-party analytics, advertising, or tracking services.</p>
+    
     <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Any changes will be reflected in the "Last Updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-
+    <p>If we ever change this privacy policy, we'll update this page. But our core commitment will never change: your journal is yours, and your data stays on your device.</p>
+    
     <h2>Contact</h2>
-    <p>If you have questions about this privacy policy, please contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:privacy@raycar.net">privacy@raycar.net</a></p>
-
-    <h2>Summary</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Data Type</th>
-                <th>Collected?</th>
-                <th>Stored Where</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Journal entries</td>
-                <td>No</td>
-                <td>Your device only</td>
-            </tr>
-            <tr>
-                <td>Personal info</td>
-                <td>No</td>
-                <td>Not collected</td>
-            </tr>
-            <tr>
-                <td>Usage analytics</td>
-                <td>No</td>
-                <td>Not collected</td>
-            </tr>
-            <tr>
-                <td>Payment info</td>
-                <td>No</td>
-                <td>Handled by Apple</td>
-            </tr>
-            <tr>
-                <td>Biometric data</td>
-                <td>No</td>
-                <td>Handled by Apple</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <p style="text-align: center; margin-top: 40px;"><strong>Your journal is private. We keep it that way.</strong></p>
-
-    <p style="text-align: center; margin-top: 40px; color: #999;">
-        © 2025 Dot Journal. All rights reserved.
-    </p>
+    <p>Questions? Reach out at <a href="mailto:hello@raycar.net">hello@raycar.net</a></p>
+  </main>
+  
+  <footer>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:hello@raycar.net">Contact</a>
+    </div>
+    <p>© 2026 Ray Law. Made with care.</p>
+  </footer>
 </body>
 </html>
